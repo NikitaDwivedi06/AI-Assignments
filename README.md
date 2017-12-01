@@ -3,7 +3,7 @@
 
 Solves the Graph Colourability Problem by modeling it as a constraint satisfaction problem. Given the adjacency matrix of a graph and the number of colours, this program indicates whether the graph is colouarble by the number of specified colours. If yes, it returns an appropriate assignment.
 
-Heuristics used:
+Heuristics used: <br/>
 i. To choose the variable for assignment - Minimum Remaining Values, and the Degree Heuristic as a tie breaker <br/>
 ii. To choose value for assignment - Least Constraining Value Heuristic
 
