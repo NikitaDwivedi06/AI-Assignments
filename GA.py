@@ -6,11 +6,7 @@ import time
 #returns fitness value of a particular individual
 def fitnessValueFunction(individual):
 	
-	'''
-	listOfTuples = []
-	for i in range(1,8):
-		listOfTuples.append((individual[i],i))
-	'''
+	
 	collisions = 0
 	
 	for i in range(0,8):
@@ -71,25 +67,10 @@ def RandomSelection(population,fitnessFunction):
 		for i in range(0,len(list1)):
 			list1[i] = int(list1[i])
 		sortedPopulationList.append(list1)
-	#for x in sortedPopulation:
-	#	print(x)
+	
 
 	return sortedPopulationList
 
-
-'''
-def bestInPopulation(population,fitnessFunction):
-	dict1 = {}
-	for individual in population:
-		x = fitnessFunction(individual)
-		individualString = " ".join(str(x) for x in individual)        #Conversion to string is required for this to be treated as a dict key
-		dict1[individualString] = x
-		totalFitnessValue = totalFitnessValue + x
-	
-	
-	sortedPopulation = sorted(dict1.items(), key=lambda x: x[1],reverse=True)
-	return sortedPopulation[0]
-'''
 
 def GeneticAlgorithm(population,fitnessFunction):
 
