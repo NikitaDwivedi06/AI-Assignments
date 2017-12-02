@@ -22,12 +22,22 @@ Size of initial population = 10 <br/>
 
 To run: python GA.py
 
-3) ids.py
+3) aStar.py
+Solves the 8 tile puzzle problem using A-Star Search Technique <br/>
+Input format (example) for initial state: 1 2 3 4 5 0 7 8 6 <br/>
+0 indicates blank tile <br/>
+Goal State: 1 2 3 4 5 6 7 8 0 (Fixed) <br/>
+
+To run: python aStar.py (requires Utilities.py)
+
+
+4) ids.py
 
 Solves the 8 tile puzzle problem using Iterative Deepening Search.<br/>
 Input format (example) for initial state: 1 2 3 4 5 0 7 8 6 <br/>
 0 indicates the blank tile <br/>
 Goal State: 1 2 3 4 5 6 7 8 0 (Fixed)
 
-To run: python ids.py
+To run: python ids.py (requires Utilities.py)
+
 
